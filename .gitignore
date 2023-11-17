@@ -15,3 +15,8 @@ backend/.pytest_cache/
 .idea/
 .vscode/
 *.swp
+backend/app/__pycache__/__init__.cpython-310.pyc
+backend/app/__pycache__/models.cpython-310.pyc
+backend/app/__pycache__/routes.cpython-310.pyc
+oikos.code-workspace
+backend/instance/site.db
