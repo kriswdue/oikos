@@ -1,0 +1,137 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4; /* A light terracotta background */
+  color: #333; /* Default text color */
+}
+
+/* App header with background image */
+.App-header {
+  background-image: url('./assets/header.png');
+  background-size: cover;
+  background-position: center;
+  height: 150px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Transactions container and form */
+.transactions-container {
+  padding: 20px;
+}
+
+.transaction-form {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.transaction-form input {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-add {
+  background-color: #4CAF50; /* A darker green for the add button */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Transactions list */
+.transactions-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.transaction-item {
+  background-color: #e8f5e9; /* A calm green color */
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Space between transaction items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Transaction buttons */
+.transaction-item button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; /* Ensures consistent font size */
+}
+
+.button-edit {
+  background-color: #FFC107; /* An amber color for edit */
+  color: black;
+}
+
+.button-delete {
+  background-color: #f44336; /* A red color for delete */
+  color: white;
+}
+
+/* Inline edit form styles */
+.transaction-edit-form {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between inputs/buttons */
+  flex-wrap: wrap; /* Allows items to wrap as needed */
+}
+
+.transaction-edit-form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-cancel {
+  background-color: #FFC107; /* A warm amber color for cancel, to differentiate from delete */
+  color: black;
+}
+
+/* Hover effects for better user interaction */
+button:hover {
+  opacity: 0.9; /* Slight opacity change on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .transaction-form, .transaction-edit-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .transaction-form input,
+  .transaction-edit-form input,
+  .transaction-form button,
+  .transaction-edit-form button {
+    margin: 5px 0; /* Adds space above and below on smaller screens */
+  }
+
+  .transaction-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .transaction-item button {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
